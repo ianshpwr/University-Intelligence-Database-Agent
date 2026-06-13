@@ -1,6 +1,7 @@
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Integer, String, Float, Text
 
+
 Base = declarative_base()
 
 
@@ -25,3 +26,20 @@ class University(Base):
     average_salary = Column(String)
 
     source_url = Column(Text)
+
+class TuitionFee(Base):
+    __tablename__ = "tuition_fees"
+
+    id = Column(Integer, primary_key=True)
+
+    university = Column(String)
+
+    program = Column(String)
+
+    domestic_fee = Column(Float)
+
+    international_fee = Column(Float)
+
+    currency = Column(String)
+
+    source_url = Column(String)

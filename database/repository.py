@@ -1,6 +1,6 @@
 from database.db import SessionLocal
 from database.models import University
-
+from database.models import TuitionFee
 
 class UniversityRepository:
 
@@ -26,3 +26,28 @@ class UniversityRepository:
         finally:
 
             session.close()
+
+
+
+def save_tuition(data):
+
+    session = SessionLocal()
+
+    try:
+
+        fee = TuitionFee(
+            university=data["university"],
+            program=data["program"],
+            domestic_fee=data["domestic_fee"],
+            international_fee=data["international_fee"],
+            currency=data["currency"],
+            source_url=data["source_url"]
+        )
+
+        session.add(fee)
+
+        session.commit()
+
+    finally:
+
+        session.close()

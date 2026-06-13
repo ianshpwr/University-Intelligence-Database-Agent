@@ -1,25 +1,53 @@
-from scrapers.browser import BrowserManager
-from scrapers.parser import HTMLParser
+import re
 
 
-class TuitionScraper:
+def extract_waterloo_tuition(text):
 
-    def __init__(self):
-        self.browser = BrowserManager()
+    results = []
 
-    def scrape_page(self, university_name, url):
+    programs = {
+        "Computer Science": {
+            "domestic": r"Computer Science \$([0-9,]+)",
+            "international": r"Computer Science \$([0-9,]+).*?\$1,500"
+        },
+        "Engineering": {
+            "domestic": r"Faculty of Engineering, Software Engineering \$([0-9,]+)",
+            "international": r"Faculty of Engineering, Software Engineering \$([0-9,]+).*?\$1,500"
+        },
+        "Arts": {
+            "domestic": r"Faculty of Arts \$([0-9,]+)",
+            "international": r"Faculty of Arts \$([0-9,]+).*?\$1,500"
+        }
+    }
 
-        html = self.browser.fetch_html(url)
+    international_section = text.split(
+        "International (visa) students"
+    )[-1]
 
-        soup = HTMLParser.parse(html)
+    for program, patterns in programs.items():
 
-        text = soup.get_text(
-            separator=" ",
-            strip=True
+        domestic_match = re.search(
+            patterns["domestic"],
+            text
         )
 
-        return {
-            "university": university_name,
-            "source_url": url,
-            "raw_text": text[:10000]
-        }
+        international_match = re.search(
+            patterns["international"],
+            international_section
+        )
+
+        if domestic_match and international_match:
+
+            results.append(
+                {
+                    "program": program,
+                    "domestic_fee": float(
+                        domestic_match.group(1).replace(",", "")
+                    ),
+                    "international_fee": float(
+                        international_match.group(1).replace(",", "")
+                    )
+                }
+            )
+
+    return results
