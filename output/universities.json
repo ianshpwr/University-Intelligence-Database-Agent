@@ -1,1 +1,7 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    }
+]

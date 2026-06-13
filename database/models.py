@@ -45,9 +45,13 @@ class TuitionFee(Base):
     source_url = Column(String)
 
 class Scholarship(Base):
+
     __tablename__ = "scholarships"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(
+        Integer,
+        primary_key=True
+    )
 
     university = Column(String)
 

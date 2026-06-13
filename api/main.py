@@ -3,7 +3,8 @@ from fastapi import FastAPI, HTTPException
 from database.repository import (
     get_all_universities,
     get_university_by_id,
-    get_tuition_by_university
+    get_tuition_by_university,
+    get_scholarships_by_university
 )
 
 app = FastAPI(
@@ -52,6 +53,11 @@ def university_details(
     tuition = get_tuition_by_university(
         university.name
     )
+    scholarships = (
+    get_scholarships_by_university(
+        university.name
+    )
+)
 
     return {
         "id": university.id,
@@ -73,7 +79,15 @@ def university_details(
             for fee in tuition
         ],
 
-        "scholarships": [],
+        "scholarships": [
+
+    {
+        "name": item.name,
+        "amount": item.amount
+    }
+
+    for item in scholarships
+                            ],
         "courses": [],
         "living_costs": [],
         "deadlines": [],

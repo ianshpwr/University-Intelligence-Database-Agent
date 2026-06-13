@@ -2,27 +2,27 @@
     {
         "id": 1,
         "university": "University of Waterloo",
-        "program": "Global Business and Digital Arts",
-        "domestic_fee": 16000.0,
-        "international_fee": 56000.0,
+        "program": "Faculty of Arts",
+        "domestic_fee": 10000.0,
+        "international_fee": 58000.0,
         "currency": "CAD",
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
         "id": 2,
         "university": "University of Waterloo",
-        "program": "Mathematics/Financial Analysis and Risk Management",
-        "domestic_fee": 14000.0,
-        "international_fee": 63000.0,
+        "program": "Faculty of Science",
+        "domestic_fee": 10000.0,
+        "international_fee": 54000.0,
         "currency": "CAD",
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
         "id": 3,
         "university": "University of Waterloo",
-        "program": "Business Administration (Laurier) and Computer Science (Waterloo) Double Degree",
-        "domestic_fee": 20000.0,
-        "international_fee": 75000.0,
+        "program": "Faculty of Environment",
+        "domestic_fee": 10000.0,
+        "international_fee": 51000.0,
         "currency": "CAD",
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
@@ -38,32 +38,23 @@
     {
         "id": 5,
         "university": "University of Waterloo",
-        "program": "Faculty of Arts",
-        "domestic_fee": 10000.0,
-        "international_fee": 58000.0,
+        "program": "Architecture",
+        "domestic_fee": 15000.0,
+        "international_fee": 75000.0,
         "currency": "CAD",
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
         "id": 6,
         "university": "University of Waterloo",
-        "program": "Faculty of Science",
-        "domestic_fee": 10000.0,
-        "international_fee": 54000.0,
+        "program": "Business Administration (Laurier) and Mathematics (Waterloo) Double Degree",
+        "domestic_fee": 15000.0,
+        "international_fee": 64000.0,
         "currency": "CAD",
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
         "id": 7,
-        "university": "University of Waterloo",
-        "program": "Faculty of Environment",
-        "domestic_fee": 10000.0,
-        "international_fee": 51000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 8,
         "university": "University of Waterloo",
         "program": "Computer Science",
         "domestic_fee": 18000.0,
@@ -72,25 +63,7 @@
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
-        "id": 9,
-        "university": "University of Waterloo",
-        "program": "Architecture",
-        "domestic_fee": 15000.0,
-        "international_fee": 75000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 10,
-        "university": "University of Waterloo",
-        "program": "Business Administration (Laurier) and Mathematics (Waterloo) Double Degree",
-        "domestic_fee": 15000.0,
-        "international_fee": 64000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 11,
+        "id": 8,
         "university": "University of Waterloo",
         "program": "Faculty of Health",
         "domestic_fee": 10000.0,
@@ -99,70 +72,7 @@
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
-        "id": 12,
-        "university": "University of Waterloo",
-        "program": "Faculty of Environment",
-        "domestic_fee": 10000.0,
-        "international_fee": 51000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 13,
-        "university": "University of Waterloo",
-        "program": "Mathematics/Financial Analysis and Risk Management",
-        "domestic_fee": 14000.0,
-        "international_fee": 63000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 14,
-        "university": "University of Waterloo",
-        "program": "Faculty of Arts",
-        "domestic_fee": 10000.0,
-        "international_fee": 58000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 15,
-        "university": "University of Waterloo",
-        "program": "Faculty of Engineering, Software Engineering",
-        "domestic_fee": 21000.0,
-        "international_fee": 75000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 16,
-        "university": "University of Waterloo",
-        "program": "Business Administration (Laurier) and Mathematics (Waterloo) Double Degree",
-        "domestic_fee": 15000.0,
-        "international_fee": 64000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 17,
-        "university": "University of Waterloo",
-        "program": "Business Administration (Laurier) and Computer Science (Waterloo) Double Degree",
-        "domestic_fee": 20000.0,
-        "international_fee": 75000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 18,
-        "university": "University of Waterloo",
-        "program": "Architecture",
-        "domestic_fee": 15000.0,
-        "international_fee": 75000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 19,
+        "id": 9,
         "university": "University of Waterloo",
         "program": "Global Business and Digital Arts",
         "domestic_fee": 16000.0,
@@ -171,29 +81,20 @@
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
-        "id": 20,
+        "id": 10,
         "university": "University of Waterloo",
-        "program": "Computer Science",
-        "domestic_fee": 18000.0,
-        "international_fee": 73000.0,
+        "program": "Mathematics/Financial Analysis and Risk Management",
+        "domestic_fee": 14000.0,
+        "international_fee": 63000.0,
         "currency": "CAD",
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     },
     {
-        "id": 21,
+        "id": 11,
         "university": "University of Waterloo",
-        "program": "Faculty of Health",
-        "domestic_fee": 10000.0,
-        "international_fee": 54000.0,
-        "currency": "CAD",
-        "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
-    },
-    {
-        "id": 22,
-        "university": "University of Waterloo",
-        "program": "Faculty of Science",
-        "domestic_fee": 10000.0,
-        "international_fee": 54000.0,
+        "program": "Business Administration (Laurier) and Computer Science (Waterloo) Double Degree",
+        "domestic_fee": 20000.0,
+        "international_fee": 75000.0,
         "currency": "CAD",
         "source_url": "https://uwaterloo.ca/future-students/financing/tuition"
     }
