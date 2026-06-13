@@ -1,17 +1,18 @@
-# University URLs
+# University of Waterloo
 
-## Waterloo
-
-Homepage:
+Home:
 https://uwaterloo.ca
 
 Tuition:
 https://uwaterloo.ca/future-students/financing/tuition
 
-## ASU
+Scholarships:
+https://uwaterloo.ca/future-students/financing/scholarships
 
-Homepage:
+# Arizona State University
+
+Home:
 https://www.asu.edu
 
-Cost & Aid:
-https://admission.asu.edu/cost-aid
+Scholarships:
+https://scholarships.asu.edu
