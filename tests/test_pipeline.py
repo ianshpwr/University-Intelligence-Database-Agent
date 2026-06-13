@@ -1,4 +1,4 @@
-from scrapers.tuition_scraper import TuitionExtractor
+from scrapers.extractor import UniversityExtractor
 
 with open(
     "data/raw/university_of_waterloo_tuition.txt",
@@ -10,9 +10,9 @@ with open(
 
 print("TEXT LENGTH:", len(text))
 
-extractor = TuitionExtractor()
+extractor = UniversityExtractor()
 
-fees = extractor.extract(text)
+fees = extractor.extract_tuition(text)
 
 print("FEES FOUND:", len(fees))
 
