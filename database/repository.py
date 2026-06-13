@@ -80,3 +80,37 @@ def get_all_tuition():
     finally:
 
         session.close
+
+
+def get_university_by_id(university_id):
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            University
+        ).filter(
+            University.id == university_id
+        ).first()
+
+    finally:
+
+        session.close()
+
+
+def get_tuition_by_university(university_name):
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            TuitionFee
+        ).filter(
+            TuitionFee.university == university_name
+        ).all()
+
+    finally:
+
+        session.close()
