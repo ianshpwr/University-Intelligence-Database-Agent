@@ -1,10 +1,24 @@
 from scrapers.browser import BrowserManager
-from scrapers.parser import HTMLParser
+from bs4 import BeautifulSoup
+
+urls = [
+    "https://www.ualberta.ca",
+    "https://uwaterloo.ca",
+    "https://www.asu.edu"
+]
 
 browser = BrowserManager()
 
-html = browser.fetch_html(
-    "https://www.unimelb.edu.au"
-)
+for url in urls:
+    try:
+        html = browser.fetch_html(url)
+        soup = BeautifulSoup(html, "html.parser")
 
-print(html[:1000])
+        title = soup.title.text.strip() if soup.title else "NO TITLE"
+
+        print("\n================")
+        print(url)
+        print(title)
+
+    except Exception as e:
+        print(url, e)
