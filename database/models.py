@@ -8,10 +8,20 @@ class University(Base):
     __tablename__ = "universities"
 
     id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
+
+    name = Column(String)
     country = Column(String)
     city = Column(String)
-    type = Column(String)
+    university_type = Column(String)
+
     founded_year = Column(Integer)
     ranking = Column(String)
+
+    acceptance_rate = Column(Float)
+
+    graduate_employment_rate = Column(Float)
+    graduate_employment_year = Column(String)
+
+    average_salary = Column(String)
+
     source_url = Column(Text)
