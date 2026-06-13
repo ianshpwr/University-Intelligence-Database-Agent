@@ -1,0 +1,13 @@
+{
+  "id": "rishihood",
+  "name": "Rishihood University",
+  "base_url": "https://rishihood.edu.in",
+  "city": "Sonipat",
+  "country": "India",
+  "expected_currency": "INR",
+  "discovery_mode": "auto",
+  "secondary_sources": {
+    "tuition": [],
+    "intakes": []
+  }
+}

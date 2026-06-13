@@ -1,0 +1,27 @@
+{
+  "_TODO": "Replace placeholder nulls with manually verified values for the real university selected for uni_b.",
+  "university_id": "uni_b",
+  "about": {
+    "name": null,
+    "founding_year": null,
+    "ranking": {
+      "value": null,
+      "source": null,
+      "year": null
+    },
+    "city": null,
+    "country": null,
+    "type": null,
+    "website_url": null
+  },
+  "tuition_fees": [],
+  "living_costs": {},
+  "scholarships": [],
+  "acceptance_rate": {},
+  "graduate_employment": {},
+  "average_salaries": [],
+  "visa_policy": {},
+  "intake_deadlines": [],
+  "course_listings": []
+}
+

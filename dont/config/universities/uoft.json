@@ -1,0 +1,13 @@
+{
+  "id": "uoft",
+  "name": "University of Toronto",
+  "base_url": "https://www.utoronto.ca",
+  "city": "Toronto",
+  "country": "Canada",
+  "expected_currency": "CAD",
+  "discovery_mode": "auto",
+  "secondary_sources": {
+    "tuition": [],
+    "intakes": []
+  }
+}
