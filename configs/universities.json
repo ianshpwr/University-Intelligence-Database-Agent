@@ -1,10 +1,12 @@
 [
   {
     "name": "University of Waterloo",
-    "url": "https://uwaterloo.ca"
+    "homepage": "https://uwaterloo.ca",
+    "tuition_url": "https://uwaterloo.ca/future-students/financing/tuition"
   },
   {
     "name": "Arizona State University",
-    "url": "https://www.asu.edu"
+    "homepage": "https://www.asu.edu",
+    "tuition_url": "https://admission.asu.edu/cost-aid"
   }
 ]
