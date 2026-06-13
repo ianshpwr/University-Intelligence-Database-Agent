@@ -111,3 +111,52 @@ class UniversityExtractor:
                 for x in invalid
             )
         )
+
+    def extract_scholarships(self, soup):
+
+        import re
+
+        scholarships = []
+
+        headings = soup.find_all(
+            ["h2", "h3", "h4"]
+        )
+
+        for heading in headings:
+
+            title = heading.get_text(
+                strip=True
+            )
+
+            if "Scholarship" not in title:
+                continue
+
+            next_block = heading.find_next(
+                ["div", "article", "section"]
+            )
+
+            if not next_block:
+                continue
+
+            text = next_block.get_text(
+                " ",
+                strip=True
+            )
+
+            amount_match = re.search(
+                r"\$([0-9,]+)",
+                text
+            )
+
+            if not amount_match:
+                continue
+
+            scholarships.append({
+                "name": title,
+                "amount": float(
+                    amount_match.group(1)
+                    .replace(",", "")
+                )
+            })
+
+        return scholarships

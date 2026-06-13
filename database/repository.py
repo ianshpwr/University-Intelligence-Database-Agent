@@ -1,6 +1,7 @@
 from database.db import SessionLocal
 from database.models import University
 from database.models import TuitionFee
+from database.models import Scholarship
 
 class UniversityRepository:
 
@@ -110,6 +111,27 @@ def get_tuition_by_university(university_name):
         ).filter(
             TuitionFee.university == university_name
         ).all()
+
+    finally:
+
+        session.close()
+
+def save_scholarship(data):
+
+    session = SessionLocal()
+
+    try:
+
+        scholarship = Scholarship(
+            university=data["university"],
+            name=data["name"],
+            amount=data["amount"],
+            source_url=data["source_url"]
+        )
+
+        session.add(scholarship)
+
+        session.commit()
 
     finally:
 
