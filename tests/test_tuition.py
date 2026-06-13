@@ -12,11 +12,23 @@ for uni in universities:
         uni["tuition_url"]
     )
 
-    print("\n")
-    print("=" * 50)
-    print(result["university"])
-    print("=" * 50)
+    filename = (
+        uni["name"]
+        .lower()
+        .replace(" ", "_")
+        + "_tuition.txt"
+    )
+
+    with open(
+        f"data/raw/{filename}",
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            result["raw_text"]
+        )
 
     print(
-        result["raw_text"][:500]
+        f"Saved {filename}"
     )
