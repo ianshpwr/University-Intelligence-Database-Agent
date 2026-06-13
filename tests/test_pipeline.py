@@ -1,7 +1,4 @@
-from database.repository import save_tuition
-from scrapers.tuition_scraper import (
-    extract_waterloo_tuition
-)
+from scrapers.tuition_scraper import TuitionExtractor
 
 with open(
     "data/raw/university_of_waterloo_tuition.txt",
@@ -11,17 +8,13 @@ with open(
 
     text = f.read()
 
-fees = extract_waterloo_tuition(text)
+print("TEXT LENGTH:", len(text))
 
-for fee in fees:
+extractor = TuitionExtractor()
 
-    fee["university"] = "University of Waterloo"
-    fee["currency"] = "CAD"
+fees = extractor.extract(text)
 
-    fee["source_url"] = (
-        "https://uwaterloo.ca/future-students/financing/tuition"
-    )
+print("FEES FOUND:", len(fees))
 
-    save_tuition(fee)
-
+for fee in fees[:20]:
     print(fee)
