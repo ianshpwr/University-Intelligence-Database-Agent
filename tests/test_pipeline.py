@@ -1,20 +1,8 @@
-from scrapers.extractor import UniversityExtractor
+from exporters.json_exporter import JSONExporter
 
-with open(
-    "data/raw/university_of_waterloo_tuition.txt",
-    "r",
-    encoding="utf-8"
-) as f:
+exporter = JSONExporter()
 
-    text = f.read()
+exporter.export_universities()
+exporter.export_tuition()
 
-print("TEXT LENGTH:", len(text))
-
-extractor = UniversityExtractor()
-
-fees = extractor.extract_tuition(text)
-
-print("FEES FOUND:", len(fees))
-
-for fee in fees[:20]:
-    print(fee)
+print("JSON export completed")

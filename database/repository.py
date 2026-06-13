@@ -51,3 +51,32 @@ def save_tuition(data):
     finally:
 
         session.close()
+
+def get_all_universities():
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            University
+        ).all()
+
+    finally:
+
+        session.close()
+
+
+def get_all_tuition():
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            TuitionFee
+        ).all()
+
+    finally:
+
+        session.close
