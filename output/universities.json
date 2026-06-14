@@ -11,8 +11,8 @@
     },
     {
         "id": 3,
-        "name": "University of Toronto",
-        "source_url": "https://future.utoronto.ca"
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
     },
     {
         "id": 4,
@@ -41,6 +41,31 @@
     },
     {
         "id": 9,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 10,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 11,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 12,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 13,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 14,
         "name": "University of Waterloo",
         "source_url": "https://uwaterloo.ca"
     }
