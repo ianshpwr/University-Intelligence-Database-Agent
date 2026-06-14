@@ -48,32 +48,6 @@ git clone https://github.com/ianshpwr/University-Intelligence-Database-Agent.git
 cd University-Intelligence-Database-Agent
 ```
 
-### 2. Build the Docker image
-
-```bash
-docker compose build
-```
-
-### 3. Start the API
-
-```bash
-docker compose up
-```
-
-### 4. Open Swagger Documentation
-
-```text
-http://localhost:8000/docs
-```
-
-### Stop Docker
-
-```bash
-docker compose down
-```
-
----
-
 # Local Setup (Without Docker)
 
 ### Install dependencies
@@ -104,6 +78,30 @@ python run.py all
 
 ```bash
 uvicorn api.main:app --reload
+```
+
+### 2. Build the Docker image
+
+```bash
+docker compose build
+```
+
+### 3. Start the API
+
+```bash
+docker compose up
+```
+
+### 4. Open Swagger Documentation
+
+```text
+http://localhost:8000/docs
+```
+
+### Stop Docker
+
+```bash
+docker compose down
 ```
 
 ---
