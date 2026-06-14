@@ -23,3 +23,5 @@ output/
 data/*.db
 __pycache__/
 *.pyc
+
+.env
