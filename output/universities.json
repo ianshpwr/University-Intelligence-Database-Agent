@@ -3,5 +3,45 @@
         "id": 1,
         "name": "University of Waterloo",
         "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 2,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 3,
+        "name": "University of Toronto",
+        "source_url": "https://future.utoronto.ca"
+    },
+    {
+        "id": 4,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 5,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 6,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 7,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 8,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
+    },
+    {
+        "id": 9,
+        "name": "University of Waterloo",
+        "source_url": "https://uwaterloo.ca"
     }
 ]

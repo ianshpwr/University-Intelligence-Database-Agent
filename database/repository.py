@@ -335,3 +335,78 @@ def get_visa_policies_by_university(
     finally:
 
         session.close()
+
+
+def get_all_scholarships():
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            Scholarship
+        ).all()
+
+    finally:
+
+        session.close()
+
+
+def get_all_courses():
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            Course
+        ).all()
+
+    finally:
+
+        session.close()
+
+
+def get_all_deadlines():
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            Deadline
+        ).all()
+
+    finally:
+
+        session.close()
+
+
+def get_all_living_costs():
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            LivingCost
+        ).all()
+
+    finally:
+
+        session.close()
+
+
+def get_all_visa_policies():
+
+    session = SessionLocal()
+
+    try:
+
+        return session.query(
+            VisaPolicy
+        ).all()
+
+    finally:
+
+        session.close()

@@ -110,13 +110,11 @@ def export_data():
 
     json_exporter.export_universities()
 
-    json_exporter.export_tuition()
-
     csv_exporter = CSVExporter()
 
     csv_exporter.export_universities()
 
-    csv_exporter.export_tuition()
+    csv_exporter.export_university_data()
 
     print("Exports completed")
 
