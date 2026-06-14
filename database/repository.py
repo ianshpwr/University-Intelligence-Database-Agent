@@ -88,7 +88,7 @@ def get_all_tuition():
 
     finally:
 
-        session.close
+        session.close()
 
 
 def get_university_by_id(university_id):

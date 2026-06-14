@@ -1,7 +1,6 @@
 venv/
 .git/
 __pycache__/
-output/
-data/university.db
 *.pyc
 .pytest_cache/
+output/
