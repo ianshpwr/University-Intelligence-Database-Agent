@@ -1,0 +1,11 @@
+services:
+  university-intelligence:
+    build: .
+    container_name: university-intelligence
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
