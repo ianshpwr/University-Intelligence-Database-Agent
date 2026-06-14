@@ -60,3 +60,63 @@ class Scholarship(Base):
     amount = Column(Float)
 
     source_url = Column(String)
+
+
+class LivingCost(Base):
+    __tablename__ = "living_costs"
+
+    id = Column(Integer, primary_key=True)
+
+    university = Column(String)
+
+    category = Column(String)
+
+    amount = Column(String)
+
+    currency = Column(String)
+
+
+class Deadline(Base):
+    __tablename__ = "deadlines"
+
+    id = Column(Integer, primary_key=True)
+
+    university = Column(String)
+
+    intake = Column(String)
+
+    deadline = Column(String)
+
+
+class Course(Base):
+    __tablename__ = "courses"
+
+    id = Column(Integer, primary_key=True)
+
+    university = Column(String)
+
+    code = Column(String)
+
+    title = Column(String)
+
+    credits = Column(String)
+
+    description = Column(Text)
+
+    prerequisites = Column(Text)
+
+    mode = Column(String)
+
+
+class VisaPolicy(Base):
+    __tablename__ = "visa_policies"
+
+    id = Column(Integer, primary_key=True)
+
+    university = Column(String)
+
+    visa_type = Column(String)
+
+    processing_time = Column(String)
+
+    requirements = Column(Text)

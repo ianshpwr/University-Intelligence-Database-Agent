@@ -1,18 +1,22 @@
-# University of Waterloo
+# University of Waterloo Sources
 
-Home:
+## Home
 https://uwaterloo.ca
 
-Tuition:
+## Tuition
 https://uwaterloo.ca/future-students/financing/tuition
 
-Scholarships:
+## Scholarships
 https://uwaterloo.ca/future-students/financing/scholarships
 
-# Arizona State University
+## Programs
+https://uwaterloo.ca/future-students/programs
 
-Home:
-https://www.asu.edu
+## Important Dates
+https://uwaterloo.ca/future-students/admissions/application-deadlines
 
-Scholarships:
-https://scholarships.asu.edu
+## Residence / Living Costs
+https://uwaterloo.ca/future-students/living-on-campus
+
+## International Students
+https://uwaterloo.ca/future-students/international-students
