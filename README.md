@@ -2,34 +2,31 @@
 
 ⚠️ **Project Status**
 
-This project was built in approximately **1 day** as part of an assignment.
+This project was built in approximately **1 day** as part of an internship challenge.
 
-The current implementation is a working MVP focused on demonstrating:
+It is currently a working MVP focused on demonstrating:
 
-* Data extraction
+* Web scraping
 * Data storage
 * API development
 * Data export
 * Docker deployment
 
-The scraping logic is currently optimized for the University of Waterloo and serves as a foundation for future expansion.
+The current implementation is primarily optimized for the University of Waterloo. Future iterations will focus on generalizing extraction logic across multiple universities and simplifying scraper maintenance.
 
-Future improvements include:
+---
 
-* Generalizing extractors across multiple universities
-* Reducing website-specific parsing logic
-* Improving data validation
-* Expanding university coverage
-* Improving extraction accuracy and maintainability
+## What does this project do?
 
-## Features
+This project collects university information from public university websites and stores it in a structured database.
 
-* Web scraping pipeline
-* SQLite database storage
-* FastAPI REST API
-* CSV export
-* JSON export
-* Docker support
+The collected data can then be:
+
+* Queried through a REST API
+* Exported as CSV
+* Exported as JSON
+
+---
 
 ## Data Collected
 
@@ -40,57 +37,76 @@ Future improvements include:
 * Living Costs
 * Visa Policies
 
-## Setup
+---
+
+# Quick Start (Docker Recommended)
+
+### 1. Clone the repository
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/ianshpwr/University-Intelligence-Database-Agent.git
+cd University-Intelligence-Database-Agent
 ```
 
-## Commands
-
-```bash
-python run.py scrape
-python run.py export
-python run.py all
-```
-
-## Run API
-
-```bash
-uvicorn api.main:app --reload
-```
-
-Swagger UI:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
-## Docker
-
-Build:
+### 2. Build the Docker image
 
 ```bash
 docker compose build
 ```
 
-Run:
+### 3. Start the API
 
 ```bash
 docker compose up
 ```
 
-Stop:
+### 4. Open Swagger Documentation
+
+```text
+http://localhost:8000/docs
+```
+
+### Stop Docker
 
 ```bash
 docker compose down
 ```
 
-Swagger UI:
+---
 
-```text
-http://localhost:8000/docs
+# Local Setup (Without Docker)
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
 ```
+
+### Collect data
+
+```bash
+python run.py scrape
+```
+
+### Export data
+
+```bash
+python run.py export
+```
+
+### Run complete pipeline
+
+```bash
+python run.py all
+```
+
+### Start API
+
+```bash
+uvicorn api.main:app --reload
+```
+
+---
 
 ## API Endpoints
 
@@ -100,10 +116,49 @@ GET /universities
 GET /universities/{id}
 ```
 
-## Output
+---
+
+## Output Files
+
+After running:
+
+```bash
+python run.py export
+```
+
+generated files are available in:
 
 ```text
 output/
 ├── university_data.csv
 └── university_data.json
+```
+
+---
+
+## Project Structure
+
+```text
+api/
+database/
+exporters/
+scrapers/
+tests/
+output/
+data/
+run.py
+```
+
+---
+
+## Future Improvements
+
+* Multi-university support
+* More generalized extraction logic
+* Better validation and error handling
+* Additional export formats
+* Automated scraping schedules
+* Improved API filtering and search
+
+```
 ```
