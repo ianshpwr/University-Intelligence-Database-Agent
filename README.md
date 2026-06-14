@@ -2,7 +2,7 @@
 
 ⚠️ **Project Status**
 
-This project was built in approximately **1 day** as part of an internship challenge.
+This project was built in approximately **1 day** as part of an assignment
 
 It is currently a working MVP focused on demonstrating:
 
