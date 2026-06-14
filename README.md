@@ -1,6 +1,26 @@
 # University Intelligence
 
-A data collection and intelligence platform that extracts university information, stores it in SQLite, exposes it through FastAPI, and exports structured datasets.
+⚠️ **Project Status**
+
+This project was built in approximately **1 day** as part of an assignment.
+
+The current implementation is a working MVP focused on demonstrating:
+
+* Data extraction
+* Data storage
+* API development
+* Data export
+* Docker deployment
+
+The scraping logic is currently optimized for the University of Waterloo and serves as a foundation for future expansion.
+
+Future improvements include:
+
+* Generalizing extractors across multiple universities
+* Reducing website-specific parsing logic
+* Improving data validation
+* Expanding university coverage
+* Improving extraction accuracy and maintainability
 
 ## Features
 
@@ -9,6 +29,7 @@ A data collection and intelligence platform that extracts university information
 * FastAPI REST API
 * CSV export
 * JSON export
+* Docker support
 
 ## Data Collected
 
@@ -43,6 +64,32 @@ Swagger UI:
 
 ```text
 http://127.0.0.1:8000/docs
+```
+
+## Docker
+
+Build:
+
+```bash
+docker compose build
+```
+
+Run:
+
+```bash
+docker compose up
+```
+
+Stop:
+
+```bash
+docker compose down
+```
+
+Swagger UI:
+
+```text
+http://localhost:8000/docs
 ```
 
 ## API Endpoints
