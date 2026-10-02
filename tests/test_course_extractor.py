@@ -26,3 +26,7 @@ print(
 
 for course in courses[:20]:
     print(course)
+
+
+for i in range(5):
+    print(4)
